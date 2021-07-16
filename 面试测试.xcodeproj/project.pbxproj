@@ -67,6 +67,7 @@
 		1AD1638C26A164CD002634EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD1638A26A164CD002634EE /* LaunchScreen.storyboard */; };
 		1AD1638F26A164CD002634EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD1638E26A164CD002634EE /* main.m */; };
 		1AD1639526A164E7002634EE /* AView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD1639426A164E7002634EE /* AView.m */; };
+		1AD1639D26A1863A002634EE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AD1639C26A1863A002634EE /* main.cpp */; };
 		1AE15A5D269C21D0009EE04E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE15A5C269C21D0009EE04E /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		1AD1630F26A1275D002634EE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1AD1639826A1863A002634EE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -231,6 +241,8 @@
 		1AD1638E26A164CD002634EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AD1639326A164E7002634EE /* AView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AView.h; sourceTree = "<group>"; };
 		1AD1639426A164E7002634EE /* AView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AView.m; sourceTree = "<group>"; };
+		1AD1639A26A1863A002634EE /* 多继承测试 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "多继承测试"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD1639C26A1863A002634EE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1AE15A59269C21D0009EE04E /* 面试测试 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "面试测试"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE15A5C269C21D0009EE04E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -300,6 +312,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1AD1637726A164CB002634EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD1639726A1863A002634EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -501,6 +520,14 @@
 			path = "界面布局测试";
 			sourceTree = "<group>";
 		};
+		1AD1639B26A1863A002634EE /* 多继承测试 */ = {
+			isa = PBXGroup;
+			children = (
+				1AD1639C26A1863A002634EE /* main.cpp */,
+			);
+			path = "多继承测试";
+			sourceTree = "<group>";
+		};
 		1AE15A50269C21D0009EE04E = {
 			isa = PBXGroup;
 			children = (
@@ -519,6 +546,7 @@
 				1AD1633526A129F0002634EE /* 三种计时器 */,
 				1AD1635226A155A9002634EE /* 响应链 */,
 				1AD1637B26A164CB002634EE /* 界面布局测试 */,
+				1AD1639B26A1863A002634EE /* 多继承测试 */,
 				1AE15A5A269C21D0009EE04E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -537,6 +565,7 @@
 				1AD1633426A129F0002634EE /* 三种计时器.app */,
 				1AD1635126A155A9002634EE /* 响应链.app */,
 				1AD1637A26A164CB002634EE /* 界面布局测试.app */,
+				1AD1639A26A1863A002634EE /* 多继承测试 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -722,6 +751,23 @@
 			productReference = 1AD1637A26A164CB002634EE /* 界面布局测试.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1AD1639926A1863A002634EE /* 多继承测试 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AD1639E26A1863A002634EE /* Build configuration list for PBXNativeTarget "多继承测试" */;
+			buildPhases = (
+				1AD1639626A1863A002634EE /* Sources */,
+				1AD1639726A1863A002634EE /* Frameworks */,
+				1AD1639826A1863A002634EE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "多继承测试";
+			productName = "多继承测试";
+			productReference = 1AD1639A26A1863A002634EE /* 多继承测试 */;
+			productType = "com.apple.product-type.tool";
+		};
 		1AE15A58269C21D0009EE04E /* 面试测试 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AE15A60269C21D0009EE04E /* Build configuration list for PBXNativeTarget "面试测试" */;
@@ -777,6 +823,9 @@
 					1AD1637926A164CB002634EE = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
+					1AD1639926A1863A002634EE = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 					1AE15A58269C21D0009EE04E = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -806,6 +855,7 @@
 				1AD1633326A129F0002634EE /* 三种计时器 */,
 				1AD1635026A155A9002634EE /* 响应链 */,
 				1AD1637926A164CB002634EE /* 界面布局测试 */,
+				1AD1639926A1863A002634EE /* 多继承测试 */,
 			);
 		};
 /* End PBXProject section */
@@ -990,6 +1040,14 @@
 				1AD1638F26A164CD002634EE /* main.m in Sources */,
 				1AD1639526A164E7002634EE /* AView.m in Sources */,
 				1AD1638126A164CB002634EE /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD1639626A1863A002634EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD1639D26A1863A002634EE /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1404,6 +1462,22 @@
 			};
 			name = Release;
 		};
+		1AD1639F26A1863A002634EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1AD163A026A1863A002634EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		1AE15A5E269C21D0009EE04E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1620,6 +1694,15 @@
 			buildConfigurations = (
 				1AD1639126A164CD002634EE /* Debug */,
 				1AD1639226A164CD002634EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AD1639E26A1863A002634EE /* Build configuration list for PBXNativeTarget "多继承测试" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD1639F26A1863A002634EE /* Debug */,
+				1AD163A026A1863A002634EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
