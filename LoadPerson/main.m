@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Person.h"
+#import "Son.h"
 
 @interface NSObject()
 {
@@ -21,7 +22,15 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
+         
+        
         Person *person = [Person new];
+        
+         
+        [Son ShareSon];
+        [Son ShareSon];
+        [Son ShareSon];
+        
         
         SEL selector = @selector(abc:cd1:andInt:);
         NSMethodSignature *sig = [person methodSignatureForSelector:selector];

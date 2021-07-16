@@ -51,7 +51,11 @@
 
 - (IBAction)loop:(id)sender
 {
-    [thread runSelector:@selector(doSomething) WithTarget:self];
+    NSLog(@"action:%@",[NSThread currentThread]);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"gcd action:%@",[NSThread currentThread]);
+    });
+//    [thread runSelector:@selector(doSomething) WithTarget:self];
 }
 
 static int abc = 10;

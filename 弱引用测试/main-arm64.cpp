@@ -106,7 +106,8 @@ struct __AtAutoreleasePool {
 };
 
 #define __OFFSETOFIVAR__(TYPE, MEMBER) ((long long) &((TYPE *)0)->MEMBER)
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_c9_dt344g4s79gg3_v1l7r19ql40000gn_T_main_772847_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"%@",2};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_c9_dt344g4s79gg3_v1l7r19ql40000gn_T_main_de56a7_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"person",6};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_c9_dt344g4s79gg3_v1l7r19ql40000gn_T_main_de56a7_mi_1 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"%@",2};
 
 
 
@@ -34228,8 +34229,50 @@ struct NSUUID_IMPL {
 #pragma clang assume_nonnull end
 
 int main(int argc, const char * argv[]) {
+
+    NSObject *obj = ((NSObject *(*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("NSObject"), sel_registerName("new"));
+{
+    id _rethrow = 0; id _sync_obj = (id)obj; objc_sync_enter(_sync_obj);
+    try 
+    {
+
+      struct _SYNC_EXIT 
+      { 
+        _SYNC_EXIT(id arg) : sync_exit(arg) {}
+        ~_SYNC_EXIT() {objc_sync_exit(sync_exit);}
+        id sync_exit;
+      } 
+      _sync_exit(_sync_obj);
+
+      NSLog((NSString *)&__NSConstantStringImpl__var_folders_c9_dt344g4s79gg3_v1l7r19ql40000gn_T_main_de56a7_mi_0);
+
+    }
+    catch (id e) 
+    {
+      _rethrow = e;
+    }
+
+    { 
+      struct _FIN 
+      { 
+        _FIN(id reth) : rethrow(reth) 
+        {
+
+        }
+        ~_FIN() 
+        { 
+          if (rethrow) objc_exception_throw(rethrow); 
+        }
+        id rethrow;
+      }
+      _fin_force_rethow(_rethrow);
+    }
+}
+
+
+    ((void (*)(id, SEL, NSUInteger))(void *)objc_msgSend)((id)((NSThread * _Nonnull (*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("NSThread"), sel_registerName("currentThread")), sel_registerName("setStackSize:"), (NSUInteger)1024);
     id __attribute__((objc_ownership(strong))) object =((NSObject *(*)(id, SEL))(void *)objc_msgSend)((id)((NSObject *(*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("NSObject"), sel_registerName("alloc")), sel_registerName("init"));
-    NSLog((NSString *)&__NSConstantStringImpl__var_folders_c9_dt344g4s79gg3_v1l7r19ql40000gn_T_main_772847_mi_0,object);
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_c9_dt344g4s79gg3_v1l7r19ql40000gn_T_main_de56a7_mi_1,object);
     return 0;
 }
 static struct IMAGE_INFO { unsigned version; unsigned flag; } _OBJC_IMAGE_INFO = { 0, 2 };

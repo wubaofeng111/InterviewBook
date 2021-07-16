@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Son : Person
-
++(Son*)ShareSon;
 @end
 
 NS_ASSUME_NONNULL_END
